@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truva Feedback App</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Truva Feedback App</h1>
+        <p>Share your thoughts about the boot camp experience.</p>
+
+        <form id="feedback-form">
+          <label for="name">Your Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="message">Feedback</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your feedback"
+            required
+          ></textarea>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+
+        <p id="status-message" class="status"></p>
+      </section>
+
+      <section class="card">
+        <h2>Recent Feedback</h2>
+        <div id="feedback-list" class="feedback-list"></div>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
